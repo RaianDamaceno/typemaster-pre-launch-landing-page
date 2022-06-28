@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap');
 
 :root {
     --background: #FFFFFF;
@@ -14,6 +14,9 @@ body, html {
     justify-content: center;
 }
 
+button {
+    cursor: pointer;
+}
 * {
     margin: 0;
     padding: 0;
@@ -117,6 +120,38 @@ header {
 
 }
 
+.content-intro-buttons {
+    width: 342px;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-intro-btn {
+    height: 58px;
+    width: 175px;
+    border-radius: 8px;
+    background: #F16718;
+    border: none;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.content-intro-release {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #7B8BAD;
+}
 /* End Content */
 
 .details {
@@ -129,15 +164,21 @@ header {
 }
 
 .details-phone {
-    background: url("./assets/desktop/image-phone-and-keyboard.jpg");
+    background: linear-gradient(
+        rgba(241, 103, 24, 0.8), 
+        rgba(241, 103, 24, 0.8)
+      ), url("./assets/desktop/image-phone-and-keyboard.jpg");
     background-size: 100% 100%;
     mix-blend-mode: multiply;
-    opacity: 0.75;
+    opacity: 1;
+    border-radius: 16px;
+    
 }
 
 .details-keyboard {
     background: url("./assets/desktop/image-glass-and-keyboard.jpg");
     background-size: 100% 100%;
+    border-radius: 16px;
 }
 
 
@@ -199,4 +240,22 @@ h2.info-detail-text {
     color: #7B8BAD;
     bottom: 0;
     position: absolute;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px
+}
+
+.credits {
+    text-align: center;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7B8BAD;
 }
