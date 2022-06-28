@@ -20,7 +20,7 @@ body, html {
     box-sizing: border-box;
 }
 
-h1 {
+h1.content-intro-title {
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 900;
@@ -30,7 +30,7 @@ h1 {
     color: #162542;
 }
 
-.content-intro-subtext {
+h2.content-intro-subtext {
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 500;
@@ -38,13 +38,31 @@ h1 {
     line-height: 26px;
     margin-top: 24px;
     /* or 144% */
+    color: #7B8BAD;
+}
 
+h1.details-info-keyboard-title {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #162542;
+}
 
-color: #7B8BAD;
+h2.details-info-keyboard-text {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 27px;
+    color: #7B8BAD;
 }
 
 .container {
-    width: 1400px;
+    width: 1110px;
     height: 100%;
     display: flex;
     flex-direction: column;   
@@ -104,18 +122,15 @@ header {
 .details {
     width: 100%;
     height: 480px;
-    border: solid 1px blue;
     margin-top: 30px;
     display: grid;
     grid-template-columns: 255px 445px auto;
     gap: 30px;
-    
 }
 
 .details-phone {
     background: url("./assets/desktop/image-phone-and-keyboard.jpg");
     background-size: 100% 100%;
-    border: solid 1px red;
     mix-blend-mode: multiply;
     opacity: 0.75;
 }
@@ -123,20 +138,65 @@ header {
 .details-keyboard {
     background: url("./assets/desktop/image-glass-and-keyboard.jpg");
     background-size: 100% 100%;
-    border: solid 1px red;
 }
 
-.details-info {
-
-}
 
 .details-info-keyboard {
-    border: solid 1px;
     width: 255px;
     height: 265px;
-    margin-left: 125px;
+    margin-left: 95px;
+    margin-top: 112px;
 }
+
+/* End Detail */
 
 .info {
     height: 684px;
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px;
+    gap: 30px;
+}
+
+.info-detail {
+
+   height: 323px;
+   margin-top: 168px;
+   position: relative;
+}
+
+.info-detail-image {
+    width: 65px;
+    height: 65px;
+    background: #F16718;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-detail-image-img {
+    width: 25.14px;
+    height: 20.24px;
+}
+
+h1.info-detail-title {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #162542;
+    margin-top: 48px;
+}
+
+h2.info-detail-text {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7B8BAD;
+    bottom: 0;
+    position: absolute;
 }
